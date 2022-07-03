@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262376932930",
+    "project_id": "emp-intranet",
+    "storage_bucket": "emp-intranet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262376932930:android:5eea2fd85e4f5ee58dcfdb",
+        "android_client_info": {
+          "package_name": "com.empsiap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262376932930-8nk8g7op0k0h2n74c64q7nftbmi6di1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9A1EiPEVmwkQ1CoknVBdYMazlRHBEo9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262376932930-8nk8g7op0k0h2n74c64q7nftbmi6di1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

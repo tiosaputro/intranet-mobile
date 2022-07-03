@@ -2,7 +2,7 @@
   "expo": {
     "name": "EMP SIAP",
     "slug": "emp-siap",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "icon": "./assets/icon.png",
     "description": "Intranet App PT.Energi Mega Persada",
     "splash": {
@@ -10,6 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "notification":{
+      "icon":"./assets/icon.png"
+   },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,17 +20,35 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.empsiap"
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package" : "emp.id"
+      "package" : "com.empsiap",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/logo.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/notification-sound.wav",
+            "./assets/notification-sound-other.wav"
+          ],
+          "mode" : "production"
+        }
+      ]
+    ]
   }
 }
