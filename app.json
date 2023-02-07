@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "EMP SIAP",
+    "name": "SIAP EMP",
     "slug": "emp-siap",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "icon": "./assets/icon.png",
     "description": "Intranet App PT.Energi Mega Persada",
     "splash": {
@@ -14,16 +14,25 @@
       "icon": "./assets/icon.png"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/c2ae13ce-d518-4267-81cb-c6e4fe2166ed"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.empsiap",
-      "infoPlist" : {
-        "UIBackgroundModes": ["remote-notification", "fetch", "location"]
+      "bundleIdentifier": "com.emp.id.siap",
+      "buildNumber": "5",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification",
+          "fetch"
+        ],
+        "NSCameraUsageDescription": "We use your camera to take a picture that will be used for your profile photo"
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
       }
     },
     "android": {
@@ -34,7 +43,8 @@
         "backgroundColor": "#212427"
       },
       "package": "com.empsiap",
-      "versionCode": 1
+      "versionCode": 1,
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/icon.png"
@@ -56,7 +66,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "b9a6f8da-d96f-4ea7-ba52-fd2446c3df2e"
+        "projectId": "c2ae13ce-d518-4267-81cb-c6e4fe2166ed"
       }
     }
   }
